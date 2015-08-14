@@ -1,0 +1,57 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_sudoers: yes
+
+#TODO: dotfiles
+
+homebrew_installed_packages:
+  - wget
+  - ghostscript
+  - git
+  - freetype
+  - imagemagick
+  - swftools
+  - ffmpeg
+  - jpeg
+  - libpng
+  - libav
+  - mysql
+  - ansible
+  - boot2docker
+  - docker
+  - go
+  - iperf
+  - python
+  - npm
+  - kdiff3
+  - openssl
+  - wrk
+  - brew-cask
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - firefox
+  - google-chrome
+  - atom #Texteditor made by github
+  - keepingyouawake #opensource caffeine clone
+  - intellij-idea
+  - slack
+  - 1password
+  - sourcetree
+  - adobe-reader
+  - cyberduck
+  - dropbox
+  - flux
+  - libreoffice
+  - mysqlworkbench
+  - launchrocket
+  - xtrafinder
+  - appcleaner
+  - flash-player-debugger
