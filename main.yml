@@ -13,4 +13,4 @@
     - include: tasks/ansible-setup.yml
     - include: tasks/preferences.yml
     - include: tasks/oxomi.yml
-    - include: tasks/basic.yml
+    - include: tasks/git.yml
