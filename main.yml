@@ -14,3 +14,4 @@
     - include: tasks/preferences.yml
     - include: tasks/oxomi.yml
     - include: tasks/git.yml
+    - include: tasks/bash.yml
