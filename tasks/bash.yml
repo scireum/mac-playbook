@@ -9,9 +9,9 @@
     - { regexp: '^alias ip=', line: 'alias ip="dig +short myip.opendns.com @resolver1.opendns.com"' }
     - { regexp: '^alias localip=', line: 'alias localip="ipconfig getifaddr en0"' }
     - { regexp: '^alias lbin=', line: 'alias lbin="goto /usr/local/bin"' }
-    - { regexp: '^alias home=', line: 'alias home="goto /Users/sbi"' }
-    - { regexp: '^alias dl=', line: 'alias dl="goto /Users/sbi/Downloads"' }
-    - { regexp: '^alias dev=', line: 'alias dev="goto /Users/sbi/dev"' }
+    - { regexp: '^alias home=', line: 'alias home="goto /Users/$(logname)"' }
+    - { regexp: '^alias dl=', line: 'alias dl="goto /Users/$(logname)/Downloads"' }
+    - { regexp: '^alias dev=', line: 'alias dev="goto /Users/$(logname)/dev"' }
     - { regexp: '^alias grep=', line: 'alias grep="grep --color=auto"' }
     - { regexp: '^alias egrep=', line: 'alias egrep="egrep --color=auto"' }
     - { regexp: '^alias fgrep=', line: 'alias fgrep="fgrep --color=auto"' }
