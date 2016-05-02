@@ -1,0 +1,16 @@
+---
+- name: Copy pre-push hook
+  copy: src=files/basic/pre-push.sh dest=/usr/local/.git/hooks/pre-push.sh
+  sudo: True
+
+- name: Add git shortcuts.
+  shell: git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit" &&
+         git config --global alias.lola "log --graph --decorate --pretty=oneline --abbrev-commit bla" &&
+         git config --global alias.cleanup "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d && git remote | xargs -n 1 git remote prune" &&
+         git config --global alias.update "!git fetch origin master && git merge origin/master" &&
+         git config --global alias.feature "!f() { git checkout master && git pull && git branch \$(logname)/\$1 && git checkout \$(logname)/\$1; }; f" &&
+         git config --global alias.st "status -s" &&
+         git config --global alias.cl "clone" &&
+         git config --global alias.ci "commit" &&
+         git config --global alias.co "checkout" &&
+         git config --global alias.br "branch"

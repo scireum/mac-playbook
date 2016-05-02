@@ -1,0 +1,29 @@
+---
+- name: Add bash shortcuts
+  lineinfile:
+    dest: ~/.bash_profile
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+  with_items:
+    - { regexp: '^alias ls=', line: 'alias ls="ls -la"' }
+    - { regexp: '^alias ip=', line: 'alias ip="dig +short myip.opendns.com @resolver1.opendns.com"' }
+    - { regexp: '^alias localip=', line: 'alias localip="ipconfig getifaddr en0"' }
+    - { regexp: '^alias lbin=', line: 'alias lbin="goto /usr/local/bin"' }
+    - { regexp: '^alias home=', line: 'alias home="goto /Users/sbi"' }
+    - { regexp: '^alias dl=', line: 'alias dl="goto /Users/sbi/Downloads"' }
+    - { regexp: '^alias dev=', line: 'alias dev="goto /Users/sbi/dev"' }
+    - { regexp: '^alias grep=', line: 'alias grep="grep --color=auto"' }
+    - { regexp: '^alias egrep=', line: 'alias egrep="egrep --color=auto"' }
+    - { regexp: '^alias fgrep=', line: 'alias fgrep="fgrep --color=auto"' }
+    - { regexp: '^alias goto=', line: "alias goto=\"eval 'echo `pwd` | tr -d \\\\n | pbcopy'; cd\"" }
+    - { regexp: '^alias back=', line: 'alias back="cd `pbpaste`"' }
+    - { regexp: '^alias ..=', line: 'alias ..="cd .."' }
+    - { regexp: '^alias cd..=', line: 'alias cd..="cd .."' }
+    - { regexp: '^alias timestamp=', line: 'alias timestamp="date +%s"' }
+    - { regexp: '^alias ts=', line: 'alias ts="date +%s"' }
+    - { regexp: '^alias finder=', line: 'alias finder="open -R"' }
+    - { regexp: '^alias st=', line: 'alias st="open . -a SourceTree"' }
+    - { regexp: '^alias edit=', line: "alias edit=\"open -a 'Sublime Text'\"" }
+    - { regexp: '^alias edit=', line: "alias edit=\"open -a 'Sublime Text'\"" }
+    - { regexp: '^alias edit=', line: "alias edit=\"open -a 'Sublime Text'\"" }
+    - { regexp: '^alias edit=', line: "alias edit=\"open -a 'Sublime Text'\"" }

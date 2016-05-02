@@ -10,13 +10,12 @@ homebrew_installed_packages:
   - ghostscript
   - git
   - freetype
-  - imagemagick
+  - graphicsmagick
   - swftools
   - ffmpeg
   - jpeg
   - libpng
   - libav
-  - mysql
   - ansible
   - boot2docker
   - docker
@@ -50,8 +49,6 @@ homebrew_cask_apps:
   - dropbox
   - flux
   - libreoffice
-  - mysqlworkbench
   - launchrocket
-  - xtrafinder
   - appcleaner
   - flash-player-debugger
