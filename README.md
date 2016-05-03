@@ -8,5 +8,6 @@ Ansible Playbook
      ```sudo pip install ansible```
   3. ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
   4. ```git clone https://github.com/scireum-incubator/mac-playbook.git```
-  5. ```ansible-galaxy install -r requirements.txt -p .```
-  6. ```ansible-playbook main.yml -i inventory --ask-sudo-pass```
+  5. ```pip install --upgrade setuptools --user python``
+  6. ```ansible-galaxy install -r requirements.txt -p .```
+  7. ```ansible-playbook main.yml -i inventory --ask-sudo-pass```
