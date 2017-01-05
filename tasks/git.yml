@@ -1,4 +1,7 @@
 ---
+- name: Ensure directory "/usr/local/.git/hooks" exists
+  file: path=/usr/local/.git/hooks/ state=directory
+
 - name: Copy pre-push hook
   copy: src=files/basic/pre-push.sh dest=/usr/local/.git/hooks/pre-push.sh
   sudo: True

@@ -1,4 +1,7 @@
 ---
+- name: Create file ~/.bash_profile
+  file: path=~/.bash_profile state=touch
+
 - name: Add bash shortcuts
   lineinfile:
     dest: ~/.bash_profile
