@@ -1,5 +1,0 @@
----
-# OXOMI files.
-- name: Copy OXOMI files
-  copy: src=files/oxomi/ dest=/opt
-  sudo: True
