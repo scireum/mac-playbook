@@ -4,8 +4,12 @@ Ansible Playbook
 
 ## basic bootstrap
 
-  bin/initial-bootstrap
+```
+bin/initial-bootstrap
+```
 
 ## basic installation
 
-  ansible-playbook main.yml
+```
+ansible-playbook main.yml
+```
