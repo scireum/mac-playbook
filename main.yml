@@ -1,16 +1,11 @@
 ---
 - hosts: localhost
-  user: scireum
   connection: local
+  gather_facts: no
 
   vars_files:
     - vars/main.yml
-
-  roles:
-    - geerlingguy.homebrew
-
   tasks:
-    - include: tasks/ansible-setup.yml
-    - include: tasks/preferences.yml
-    - include: tasks/git.yml
-    - include: tasks/bash.yml
+    - include: tasks/base_packages.yml
+    - include: tasks/memoio.yml
+    - include: tasks/teamviewer13.yml
