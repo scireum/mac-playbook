@@ -1,0 +1,8 @@
+---
+
+- name: "install base cask packages"
+  homebrew_cask:
+    name: "{{ item }}"
+    install_options: 'appdir=/Applications'
+    state: present
+  loop: "{{ brew_cask_apps }}"
