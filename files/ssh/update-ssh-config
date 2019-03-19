@@ -1,0 +1,33 @@
+#!/bin/bash
+
+SSH_CONFIG_URL="http://scireum-prod-puppet-1.scireum.com/ssh_config"
+
+if [ -z $HOME ]; then
+	echo "HOME variable not set"
+	exit 1
+fi
+
+SSH_DIRECTORY="${HOME}/.ssh"
+
+SSH_CONFIG="${SSH_DIRECTORY}/config"
+SSH_FOOTER="${SSH_DIRECTORY}/config.footer"
+
+if [ ! -f $SSH_FOOTER ] && [ -f $SSH_CONFIG ]; then
+	echo ""
+	echo "File ${SSH_FOOTER} not found!"
+	echo ""
+	echo "If you are a first time user. Please run:"
+	echo "   cp ${SSH_CONFIG} ${SSH_FOOTER}"
+	echo ""
+	exit 1
+fi
+
+TEMP_CONFIG=$(mktemp -t ssh_config)
+curl -s --output $TEMP_CONFIG ${SSH_CONFIG_URL}
+
+if [ -f ${SSH_CONFIG} ]; then
+	cp ${SSH_CONFIG} ${SSH_CONFIG}.backup
+fi
+cat $TEMP_CONFIG $SSH_FOOTER > $SSH_CONFIG
+
+rm $TEMP_CONFIG
