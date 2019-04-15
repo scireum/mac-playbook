@@ -1,0 +1,8 @@
+---
+
+- name: "install script to query ssh config"
+  copy:
+    src: ssh/update-ssh-config
+    dest: /usr/local/bin/update-ssh-config
+    mode: 0755
+
