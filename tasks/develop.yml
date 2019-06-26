@@ -1,0 +1,10 @@
+---
+
+- name: "docker-compose etc/hosts setup"
+  lineinfile:
+    path: /etc/hosts
+    state: present
+    line: "127.0.0.1 localunixsocket"
+    regexp: "^127.0.0.1 localunixsocket"
+  become: yes
+  become_method: sudo

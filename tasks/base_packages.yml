@@ -11,4 +11,4 @@
   homebrew:
     name: "{{ item }}"
     state: present
-  loop: "{{ brew_apps }}"
+  loop: "{{ brew_apps|default([]) }}"

@@ -1,0 +1,7 @@
+---
+
+brew_cask_apps:
+  - docker
+  - kitematic
+  - intellij-idea
+  - sourcetree
