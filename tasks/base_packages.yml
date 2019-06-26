@@ -6,3 +6,9 @@
     install_options: 'appdir=/Applications'
     state: present
   loop: "{{ brew_cask_apps }}"
+
+- name: "install base packages"
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ brew_apps }}"
