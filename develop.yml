@@ -6,5 +6,4 @@
   vars_files:
     - vars/develop.yml
   tasks:
-    - include: tasks/base_packages.yml
-    - include: tasks/develop.yml
+    - include: tasks/bash.yml

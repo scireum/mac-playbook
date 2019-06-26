@@ -1,0 +1,26 @@
+---
+
+- name: "install bash_profile"
+  copy:
+    src: bash/bash_profile
+    dest: ~/.bash_profile
+
+- name: "install brew bash into allowed shells"
+  lineinfile:
+    path: /etc/shells
+    state: present
+    line: "/usr/local/bin/bash"
+    regexp: "^/usr/local/bin/bash"
+  become: yes
+  become_method: sudo
+
+- name: "get running username"
+  shell: whoami
+  register: local_username
+
+- name: "set user shell to new brew bash"
+  user:
+    name: "{{ local_username }}"
+    shell: "/usr/local/bin/bash"
+  become: yes
+  become_method: sudo

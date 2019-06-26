@@ -10,4 +10,5 @@ brew_cask_apps:
   - tunnelblick
 
 brew_apps:
+  - bash
   - bash-completion

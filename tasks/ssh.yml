@@ -6,3 +6,8 @@
     dest: /usr/local/bin/update-ssh-config
     mode: 0755
 
+- name: "install script to query sign ssh keys via hildeguard"
+  copy:
+    src: ssh/sign-keys
+    dest: /usr/local/bin/sign-keys
+    mode: 0755
