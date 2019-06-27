@@ -14,7 +14,7 @@
 
 ## Energie sparen
 
- - Netzteil/Automatisches Aktivieren des Computerruhezustands bei ausgeschaltetem Display außer Kraft setzen (DISABLE)
+ - Netzteil/Automatisches Aktivieren des Computerruhezustands bei ausgeschaltetem Display außer Kraft setzen
  - Batteriestatus in der Menüzeile anzeigen
 
 ## Freigaben

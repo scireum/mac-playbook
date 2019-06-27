@@ -9,3 +9,6 @@ brew_cask_apps:
   - libreoffice
   - tunnelblick
 
+brew_apps:
+  - bash
+  - bash-completion
