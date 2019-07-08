@@ -1,0 +1,7 @@
+---
+
+- name: "install teamviewer 14"
+  homebrew_cask:
+    name: teamviewer
+    state: present
+    install_options: 'appdir=/Applications'
