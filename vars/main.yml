@@ -11,4 +11,4 @@ brew_cask_apps:
 
 brew_apps:
   - bash
-  - bash-completion
+  - bash-completion@2
