@@ -14,13 +14,7 @@
   become: yes
   become_method: sudo
 
-- name: "get running username"
-  shell: whoami
-  register: local_username
-
 - name: "set user shell to new brew bash"
-  user:
-    name: "{{ local_username }}"
-    shell: "/usr/local/bin/bash"
+  command: chsh -s /usr/local/bin/bash
   become: yes
   become_method: sudo
