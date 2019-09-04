@@ -10,5 +10,6 @@ brew_cask_apps:
   - tunnelblick
 
 brew_apps:
+  - dockutil
   - bash
   - bash-completion@2
