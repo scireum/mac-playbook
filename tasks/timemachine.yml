@@ -1,0 +1,6 @@
+---
+
+- name: "exclude Downloads directory from timemachine backup"
+  command: tmutil addexclusion -p ~/Downloads
+  become: yes
+  become_method: sudo

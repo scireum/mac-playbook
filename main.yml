@@ -11,3 +11,4 @@
     - include: tasks/memoio.yml
     - include: tasks/teamviewer14.yml
     - include: tasks/ssh.yml
+    - include: tasks/timemachine.yml
