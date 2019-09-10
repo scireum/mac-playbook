@@ -6,6 +6,11 @@
     dest: /usr/local/bin/update-ssh-config
     mode: 0755
 
+- name: "install .ssh directory for user"
+  file:
+    path: ~/.ssh
+    state: directory
+
 - name: "install default empty file config.footer"
   file:
     path: ~/.ssh/config.footer
