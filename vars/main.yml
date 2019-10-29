@@ -3,10 +3,8 @@ brew_cask_apps:
   - firefox
   - google-chrome
   - atom
-  - visual-studio-code
   - 1password
   - cyberduck
-  - libreoffice
   - tunnelblick
 
 brew_apps:
