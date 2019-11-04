@@ -1,3 +1,6 @@
+## Ton
+ - Lautstärke in der Menüleiste anzeigen
+
 ## Sicherheit
 
  - Allgemein/Passwort erforderlich "sofort" nach Beginn des Ruhezustands oder Bildschirmschoners
