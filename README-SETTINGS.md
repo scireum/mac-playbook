@@ -1,7 +1,14 @@
+## Ton
+ - Lautstärke in der Menüleiste anzeigen
+
 ## Sicherheit
 
  - Allgemein/Passwort erforderlich "sofort" nach Beginn des Ruhezustands oder Bildschirmschoners
  - FileVault/FileVault aktivieren
+
+## Bluetooth
+
+ - Bluetooth in der Menüleiste anzeigen
 
 ## TimeMachine
 

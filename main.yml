@@ -1,7 +1,6 @@
 ---
 - hosts: localhost
   connection: local
-  gather_facts: no
 
   vars_files:
     - vars/main.yml
@@ -11,4 +10,5 @@
     - include: tasks/memoio.yml
     - include: tasks/teamviewer14.yml
     - include: tasks/ssh.yml
+    - include: tasks/dockutil.yml
     - include: tasks/timemachine.yml
