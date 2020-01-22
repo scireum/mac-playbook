@@ -1,6 +1,9 @@
 ## Ton
  - Lautstärke in der Menüleiste anzeigen
 
+## Schreibtisch & Bildschirmschoner
+ - Bildschirmschoner/Starten nach 5 Minuten
+
 ## Sicherheit
 
  - Allgemein/Passwort erforderlich "sofort" nach Beginn des Ruhezustands oder Bildschirmschoners
