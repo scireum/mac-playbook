@@ -15,6 +15,8 @@
   become_method: sudo
 
 - name: "set user shell to new brew bash"
-  command: chsh -s /usr/local/bin/bash
+  user:
+    name: "{{ lookup('env', 'USER') }}"
+    shell: /usr/local/bin/bash
   become: yes
   become_method: sudo
