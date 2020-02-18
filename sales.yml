@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars_files:
+    - vars/sales.yml
+  tasks:
+    - include: tasks/base_packages.yml

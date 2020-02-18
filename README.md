@@ -19,3 +19,9 @@ ansible-playbook --ask-become-pass main.yml
 ```
 ansible-playbook --ask-become-pass develop.yml
 ```
+
+## sales installation
+
+```
+ansible-playbook --ask-become-pass sales.yml
+```
