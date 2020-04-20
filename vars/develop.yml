@@ -5,4 +5,3 @@ brew_cask_apps:
   - kitematic
   - intellij-idea
   - sourcetree
-  - visual-studio-code

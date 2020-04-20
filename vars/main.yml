@@ -2,10 +2,10 @@
 brew_cask_apps:
   - firefox
   - google-chrome
-  - atom
   - 1password
   - cyberduck
   - tunnelblick
+  - visual-studio-code
 
 brew_apps:
   - dockutil
