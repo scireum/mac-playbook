@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SSH_CONFIG_URL="http://scireum-prod-puppet-1.scireum.com/ssh_config"
-SSH_KNOWN_HOSTS_URL="http://scireum-prod-puppet-1.scireum.com/known_hosts.puppet"
+SSH_CONFIG_URL="http://scireum-vmc1-prod-puppet-1.scireum.com/ssh_config"
+SSH_KNOWN_HOSTS_URL="http://scireum-vmc1-prod-puppet-1.scireum.com/known_hosts.puppet"
 
 # Installation
 # sudo curl -s -o /usr/local/bin/update-ssh-config http://scireum-prod-puppet-1.scireum.com/update-ssh-config && sudo chmod +x /usr/local/bin/update-ssh-config
