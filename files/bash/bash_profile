@@ -10,3 +10,4 @@ if type brew &>/dev/null; then
   fi
 fi
 
+export PATH="$PATH:/usr/local/bin"

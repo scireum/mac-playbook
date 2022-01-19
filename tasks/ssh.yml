@@ -1,5 +1,10 @@
 ---
 
+- name: "install /usr/local/bin"
+  file:
+    path: /usr/local/bin
+    state: directory
+
 - name: "install script to query ssh config"
   copy:
     src: ssh/update-ssh-config

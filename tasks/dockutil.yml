@@ -1,7 +1,7 @@
 ---
 
 - name: remove apple stuff from dock
-  command: /usr/local/bin/dockutil --remove "{{ item }}"
+  command: /opt/homebrew/bin/dockutil --remove "{{ item }}"
   loop:
     - Siri
     - TV
@@ -21,7 +21,7 @@
     - 'App Store'
 
 - name: add stuff to dock
-  command: /usr/local/bin/dockutil --add {{ item }}
+  command: /opt/homebrew/bin/dockutil --add {{ item }}
   loop:
     - /Applications/Firefox.app
     - /Applications/MEMOIO.app
