@@ -7,6 +7,14 @@
   become: yes
   become_method: sudo
 
+- name: "install bash symlink"
+  file:
+    dest: /usr/local/bin/bash
+    src: /opt/homebrew/bin/bash
+    state: link
+  become: yes
+  become_method: sudo
+
 - name: "install script to query ssh config"
   copy:
     src: ssh/update-ssh-config

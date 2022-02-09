@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/usr/local/bin/bash
 
 ssh-add -D
 
