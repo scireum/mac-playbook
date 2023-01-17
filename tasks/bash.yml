@@ -9,14 +9,14 @@
   lineinfile:
     path: /etc/shells
     state: present
-    line: "/opt/homebrew/bin/bash"
-    regexp: "^/opt/homebrew/bin/bash"
+    line: "/usr/local/bin/bash"
+    regexp: "^/usr/local/bin/bash"
   become: yes
   become_method: sudo
 
 - name: "set user shell to new brew bash"
   user:
     name: "{{ lookup('env', 'USER') }}"
-    shell: /opt/homebrew/bin/bash
+    shell: /usr/local/bin/bash
   become: yes
   become_method: sudo
