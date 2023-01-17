@@ -3,7 +3,7 @@
 - name: "install memoio cask"
   copy:
     src: homebrew/memoio.rb
-    dest: /usr/local/homebrew/Library/Taps/homebrew/homebrew-cask/Casks/memoio.rb
+    dest: /opt/homebrew/Library/Taps/homebrew/homebrew-cask/Casks/memoio.rb
 
 - name: "install memoio"
   homebrew_cask:
