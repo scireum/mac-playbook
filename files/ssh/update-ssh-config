@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 
 SSH_CONFIG_URL="http://scireum-vmc1-prod-puppet-1.scireum.com/ssh_config"
 SSH_KNOWN_HOSTS_URL="http://scireum-vmc1-prod-puppet-1.scireum.com/known_hosts.puppet"

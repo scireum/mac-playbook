@@ -1,32 +1,26 @@
-## Ton
- - Lautstärke in der Menüleiste anzeigen
-
 ## Schreibtisch & Bildschirmschoner
  - Bildschirmschoner/Starten nach 5 Minuten
 
-## Sicherheit
+## Datenschutz & Sicherheit
 
- - Allgemein/Passwort erforderlich "sofort" nach Beginn des Ruhezustands oder Bildschirmschoners
  - FileVault/FileVault aktivieren
 
-## Bluetooth
+## Sperrbildschirm
+ - Allgemein/Passwort erforderlich "sofort" nach Beginn des Ruhezustands oder Bildschirmschoners
+
+## Kontrollzentrum
 
  - Bluetooth in der Menüleiste anzeigen
-
-## TimeMachine
-
- - Automatische Datensicherung
- - TimeMachine konfigurieren
+ - Lautstärke in der Menüleiste anzeigen
  
-## Softwareupdate
+## Allgemein/Softwareupdate
 
  - Meinen Mac automatisch aktualisieren
 
-## Energie sparen
+## Displays/Weitere Optionen
 
  - Netzteil/Automatisches Aktivieren des Computerruhezustands bei ausgeschaltetem Display außer Kraft setzen
- - Batteriestatus in der Menüzeile anzeigen
 
-## Freigaben
- - Gerätenamen/Bearbeiten 
+## Allegemein/Teilen
+ - Hostname/Bearbeiten 
 

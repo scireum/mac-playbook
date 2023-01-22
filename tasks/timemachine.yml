@@ -1,6 +1,0 @@
----
-
-- name: "exclude Downloads directory from timemachine backup"
-  command: "tmutil addexclusion -p {{ ansible_user_dir }}/Downloads"
-  become: yes
-  become_method: sudo

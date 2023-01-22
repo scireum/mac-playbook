@@ -1,10 +1,27 @@
 ---
 
+- name: "install /usr/local/bin"
+  file:
+    path: /usr/local/bin
+    state: directory
+  become: yes
+  become_method: sudo
+
+- name: "install bash symlink"
+  file:
+    dest: /usr/local/bin/bash
+    src: /opt/homebrew/bin/bash
+    state: link
+  become: yes
+  become_method: sudo
+
 - name: "install script to query ssh config"
   copy:
     src: ssh/update-ssh-config
     dest: /usr/local/bin/update-ssh-config
     mode: 0755
+  become: yes
+  become_method: sudo
 
 - name: "install .ssh directory for user"
   file:
@@ -21,3 +38,5 @@
     src: ssh/sign-keys
     dest: /usr/local/bin/sign-keys
     mode: 0755
+  become: yes
+  become_method: sudo

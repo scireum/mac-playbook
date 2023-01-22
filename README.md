@@ -2,6 +2,10 @@
 
 Ansible Playbook
 
+## Enable Festplattenvollzugriff
+
+* Terminal Festplattenvollzugriff
+
 ## basic bootstrap
 
 ```
