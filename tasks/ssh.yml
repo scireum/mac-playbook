@@ -33,6 +33,20 @@
     path: ~/.ssh/config.footer
     state: touch
 
+- name: "install .ssh root directory"
+  file:
+    path: ~/.ssh
+    state: directory
+  become: yes
+  become_method: sudo
+
+- name: "install default empty file config.footer for root"
+  file:
+    path: ~/.ssh/config.footer
+    state: touch
+  become: yes
+  become_method: sudo
+
 - name: "install script to query sign ssh keys via hildeguard"
   copy:
     src: ssh/sign-keys
