@@ -8,3 +8,8 @@
     regexp: "^127.0.0.1 localunixsocket"
   become: yes
   become_method: sudo
+
+- name: "install dev directory for user"
+  file:
+    path: ~/dev
+    state: directory
