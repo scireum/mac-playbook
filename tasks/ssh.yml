@@ -15,14 +15,6 @@
   become: yes
   become_method: sudo
 
-- name: "install script to query ssh config"
-  copy:
-    src: ssh/update-ssh-config
-    dest: /usr/local/bin/update-ssh-config
-    mode: 0755
-  become: yes
-  become_method: sudo
-
 - name: "install .ssh directory for user"
   file:
     path: ~/.ssh
@@ -47,10 +39,3 @@
   become: yes
   become_method: sudo
 
-- name: "install script to query sign ssh keys via hildeguard"
-  copy:
-    src: ssh/sign-keys
-    dest: /usr/local/bin/sign-keys
-    mode: 0755
-  become: yes
-  become_method: sudo
