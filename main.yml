@@ -7,5 +7,4 @@
   tasks:
     - include: tasks/base_packages.yml
     - include: tasks/bash.yml
-    - include: tasks/memoio.yml
     - include: tasks/ssh.yml
