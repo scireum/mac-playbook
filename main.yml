@@ -7,8 +7,5 @@
   tasks:
     - include: tasks/base_packages.yml
     - include: tasks/bash.yml
-    - include: tasks/memoio.yml
-    - include: tasks/teamviewer14.yml
     - include: tasks/ssh.yml
-    - include: tasks/dockutil.yml
     - include: tasks/timemachine.yml
