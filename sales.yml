@@ -6,4 +6,4 @@
   vars_files:
     - vars/sales.yml
   tasks:
-    - include: tasks/base_packages.yml
+    - include_task: tasks/base_packages.yml
